@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+
+  /* Custom "Elegant Dark" palette overrides */
+  --color-slate-950: #08080a;
+  --color-slate-900: #121216;
+  --color-slate-850: #1c1c22;
+  --color-slate-800: #25252e;
+  --color-slate-700: #343440;
+  --color-slate-600: #4a4a5a;
+  --color-slate-500: #717185;
+
+  --color-cyan-950: #0b1120;
+  --color-cyan-900: #0f1c3f;
+  --color-cyan-800: #172b5c;
+  --color-cyan-700: #1d3fa5;
+  --color-cyan-600: #2563eb;
+  --color-cyan-500: #3b82f6;
+  --color-cyan-400: #60a5fa;
+  --color-cyan-300: #93c5fd;
+  --color-cyan-200: #bfdbfe;
+  --color-cyan-100: #dbeafe;
+}
+
+/* Global design aesthetic overrides */
+body {
+  background-color: #08080a;
+  color: #e4e4e7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08080a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #25252e;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #343440;
+}
+
+/* Base selection color */
+::selection {
+  background-color: rgba(37, 99, 235, 0.25);
+  color: #bfdbfe;
+}
+
+/* Modern inputs and select styles */
+input, select, textarea {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Beautiful custom border classes and glow effects for premium look */
+.elegant-glow-safe {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.05);
+}
+
+.elegant-glow-threat {
+  box-shadow: 0 0 20px rgba(244, 63, 94, 0.06);
+}
+
+.elegant-glow-accent {
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.06);
+}
+
